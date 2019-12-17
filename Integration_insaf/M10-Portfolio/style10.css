@@ -1,0 +1,358 @@
+*{
+	box-sizing: border-box;
+}
+
+@keyframes bounce{
+   from{
+       transform :translateY(0);
+   }
+   to{
+       transform :translateY(-20px);
+   }
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+header img{
+	width: 2.5rem;
+	 /* Animation */
+}
+
+.div1 img {
+	transition: transform 0.5s;
+}
+.div1 img:hover {
+	transform: scale(1.3);
+}
+
+.div1:hover h3{
+	color:#FC2C5D;
+}
+
+nav ul li {
+	list-style-type: none;
+	margin:10px;
+}
+
+nav li a {
+	padding: 10px;
+	color: #979797;
+}
+
+ul {
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+h3 {
+	color: #979797;
+	font-size: 1.875rem;
+}
+
+
+.div1 i,.sec3 i {
+	padding: 10px;
+	font-size:1.5625rem;
+	color:#979797;
+}
+
+body {
+	background-image: url(img/fond.png);
+	text-align: center;
+	margin: 0;
+}
+
+
+.sec1{
+	background-image: url(img/bg_header.png);
+	background-position: center;
+	color:white;
+
+}
+
+.sec1  a {
+	color: #FC2C5D;
+	margin: auto;
+	padding: 10px;
+}
+.sec1  a:hover {
+	background-color: #FC2C5D;
+	color: white;
+}
+
+.sec1 p {
+	color:white;
+	padding-bottom: 15%;
+
+}
+
+.art1, .art2{
+	padding-bottom: 50px;
+}
+
+li i {
+	transition: transform 0.5s;
+
+}
+
+li i:hover {
+	transform: translate(0,10px);
+	color:#FC2C5D;
+}
+
+h2 {
+	border-bottom:  1px solid gray;
+	font-size: 2.1875rem;
+}
+
+h2:hover{
+	color:#FC2C5D;
+}
+
+.sec3 i{
+	border: 1px solid #979797;
+	border-radius: 50%;
+
+}
+
+.sec3 i:hover {
+	animation: bounce 0.35s ease infinite alternate;
+	border-radius: 50%;
+	opacity: .5;
+}
+
+.sec3 h5:hover{
+	color:#FC2C5D;
+}
+
+.sec3 article {
+	padding-bottom: 30px;
+}
+
+p {
+	color:#979797;
+	font-size: 1.125rem;
+}
+
+section{
+	padding: 20px;
+}
+
+
+.sec4 h5 {
+	text-align: left;
+	margin:20px;
+	clear: both;
+	padding:10px;
+}
+.sec4 h5:hover{
+	color: #FC2C5D;
+}
+
+.sec4  a {
+	color:#FC2C5D;
+	float: left;
+	margin-left: 5%;
+}
+
+.sec4  a:hover {
+	background-color: #FC2C5D;
+	color:white;
+}
+.sec4 img {
+	width: 80%;
+	margin:10px;
+}
+
+.sec4 i {
+	color:#FC2C5D;
+}
+
+.sec4 a:hover i{
+	color:white;
+}
+
+input {
+	font-size: 1rem;
+	padding: 20px;
+	border:thin solid #979797;
+}
+
+input[type=text]{
+	background-image: url(img/bg_form_name.svg);
+	background-repeat: no-repeat;
+	padding-left: 50px;
+	background-size: 30px 30px;
+	background-position: 15px 15px ;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 20px;
+	background-color: rgba(0,0,0,0);
+	border-radius: 50px 50px ;
+}
+
+input[type=email]{
+	background-image: url(img/bg_form_mail.svg);
+	background-repeat: no-repeat;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 20px;
+	padding-left: 50px;
+	background-size: 30px 30px;
+	background-position: 15px 15px ;
+	background-color: rgba(0,0,0,0);
+	border-radius: 50px 50px ;
+}
+
+input[type=submit]{	
+	margin-right:20px;
+}
+
+input[type=submit]:hover{	
+	background-color: #FC2C5D;
+	color:white;
+}
+
+input[type=reset]:hover{	
+	background-color: #FC2C5D;
+	color:white;
+}
+
+textarea {
+	font-size: 1rem;
+	background-image: url(img/bg_form_message.svg);
+	background-repeat: no-repeat;
+	border-radius: 50px 50px ;
+	min-width: 50%;
+	margin: auto;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-left: 50px;
+	background-size: 40px 40px;
+	background-position: 15px 15px ;
+	background-color: rgba(0,0,0,0);
+	border-radius: 50px 50px ;
+
+}
+
+textarea:hover{
+	opacity: 0.5;
+
+}
+
+footer {
+	text-align: center;
+}
+
+footer img {
+	padding-top: 50px;
+	width: 30px;
+}
+
+nav {
+	font-size:1.25rem;
+}
+
+@media screen and (min-width:721px){
+	nav ul li {
+		display: inline;
+	}
+
+	nav li {
+		margin:30px;
+	}
+	
+	header img {
+		width: 15%;
+	
+	}
+	
+	.sec4 img {
+	
+		width: 35%;
+	}
+
+	.image1{
+		float: right;
+	}
+
+	.image2 {
+		float: left;
+	}
+
+	.sec4 p {
+		text-align: left;
+		padding-left: 20px;
+	}
+
+	
+	.sec5 {
+		clear: both;
+	}
+
+	input[type=text]{
+		width: 40%;
+	}
+
+	input[type=email]{
+		width: 40%;
+	}
+
+	textarea {
+		width: 80%;
+	}
+
+}
+@media screen and (min-width:1025px){
+	header img {
+		width: 30%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	header h3 {
+		width: 50%;
+		display: inline-block;
+		font-size: 1.5rem;
+	}
+	header .div1 {
+		vertical-align: top;
+	}
+
+	.div1 {
+		display: inline-block;
+		width: 20%;
+	}
+	.div2 {
+		display: inline-block;
+		width: 70%;
+	}
+	nav ul li {
+		margin: 20px;
+		vertical-align: top;
+	}
+	.sec2 article {
+
+		padding-top: 40px;
+		padding-bottom: 5px;
+	}
+	.sec2 article {
+			width: 30%;
+		display: inline-block;
+
+	}
+		
+	.sec3 article{
+		display:inline-block;
+		width: 25%;
+		margin-right: 50px;
+		vertical-align: top;
+	}
+	
+
+}

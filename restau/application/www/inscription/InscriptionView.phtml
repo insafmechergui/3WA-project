@@ -1,0 +1,43 @@
+<h2><i class="fa fa-user"></i> Création d'un compte client</h2>
+
+<div class="container">
+        <form class="generic-form" action="<?= $requestUrl ?>/inscription" method="POST">
+			
+			<fieldset>
+				<legend><i class="fa fa-book"></i> Identité et coordonnées</legend>
+				
+						<label for="nom">Nom :</label>
+						<input id="nom" type="text" name="nom" class="form-control">
+				
+						<label for="prenom">Prénom :</label>
+						<input id="prenom" type="text" name="prenom" class="form-control">
+					
+						<label class="textarea" for="address">Adresse :</label>
+						<textarea id="address" name="address" rows="3" class="form-control"></textarea>
+					
+						<label for="city">Ville :</label>
+						<input id="city" type="text" name="city" class="form-control">
+					
+						<label for="zipCode">Code Postal :</label>
+						<input id="zipCode" class="zip-code" type="text"  name="Code" class="form-control">
+					
+						<label for="phone">Téléphone :</label>
+						<input id="phone" class="phone" type="text" name="phone" class="form-control">
+					
+			</fieldset>
+			<fieldset>
+		<legend><i class="fa fa-lock"></i> Informations d'authentification</legend>
+		
+	            <label for="mail">E-mail :</label>
+	            <input data-required  data-name="E-Mail" id="mail" type="text" name="mail" class="form-control">
+	        
+	            <label for="password">Mot de passe :</label>
+	            <input data-required data-name="Mot de passe" id="pass" type="password" name="pass" class="form-control">
+	        
+	</fieldset>
+	
+			<input class="btn btn-success" type="submit" value="Créer le compte">
+			<a class="btn btn-danger small" href="<?= $requestUrl ?>">Annuler</a>
+		
+		</form>
+</div>

@@ -1,0 +1,21 @@
+<h2><i class="fa fa-user"></i> Connexion </h2>
+
+<div class="container">
+        <form class="generic-form" action="<?= $requestUrl ?>/login" method="POST">
+						
+			<fieldset>
+		        <legend><i class="fa fa-lock"></i> Informations d'authentification</legend>
+		
+                    <label for="mail">E-mail :</label>
+                    <input data-required  data-name="E-Mail" id="mail" type="text" name="mail" class="form-control">
+
+                    <label for="password">Mot de passe :</label>
+                    <input data-required data-name="Mot de passe" id="pass" type="password" name="pass" class="form-control">
+
+            </fieldset>
+	
+			<input class="btn btn-success" type="submit" value="Connexion">
+			<a class="btn btn-danger small" href="<?= $requestUrl ?>">Annuler</a>
+		
+		</form>
+</div>

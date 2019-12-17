@@ -1,0 +1,113 @@
+
+body {
+	background-image: url(img/background_section.jpg);
+	background-size: cover;
+	margin: 0px;
+}
+
+header section {
+	background-image: url(img/fond.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+nav {
+padding: 25px;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav a {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+		margin: 0 50px;
+
+	color:white;
+	
+
+}
+header {
+	text-align: center;
+	padding-bottom: 50px;
+}
+header p {
+	color: white;
+	padding-bottom: 20px;
+}
+
+#sec1 {
+	background-color: white;
+	padding: 50px;
+	padding-bottom: 150px;
+}
+
+#sec1 article:first-child {
+	padding-bottom: 90px;
+}
+
+article #img1{
+	float: left;
+	margin-right: 10px;
+}
+
+article #img2{
+	float: right;
+}
+
+#sec2 {
+	text-align: center;
+}
+
+#sec2 article {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+#sec2 img{
+	width: 150px;
+
+}
+
+#art1{
+	width: 25%;
+	margin-right: 50px;
+
+
+} 
+
+#art2{
+	width: 25%;
+		margin-right: 50px;
+
+}
+
+#art3{
+	width: 25%;
+
+} 
+div iframe {
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+footer {
+    color: white;
+    width: 70%;
+    margin: auto
+}
+
+footer img {
+	width: 50px;
+
+}
+
+h2, h3,h4{
+	text-align: center;
+}
+
+hr{
+} 

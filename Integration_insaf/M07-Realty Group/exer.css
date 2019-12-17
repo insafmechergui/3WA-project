@@ -1,0 +1,16 @@
+header li  {
+	display: inline;
+}
+li:hover .sous-menu{
+	display: block;
+	position: absolute;
+}
+
+div{
+display:inline-block;
+text-align: center;
+}
+.sous-menu{
+	display: none;
+	width: 100%;
+}

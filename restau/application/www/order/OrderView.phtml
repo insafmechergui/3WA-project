@@ -1,0 +1,20 @@
+<h2><i class="fa fa-user"></i> Commander</h2>
+
+<div class="container">
+			<fieldset>
+					<select name="mealid" id="">
+                    <?php foreach($meals as $meal){ ?>
+					    <option value="<?= $meal['Id'] ; ?>"><?= $meal['Name'] ; ?></option>      
+				    <?php } ?>
+					</select>	
+            	
+			</fieldset>
+			
+			<fieldset>
+        
+	        </fieldset>
+	
+			<input class="btn btn-success" type="submit" value="Valider la commande">
+			<a class="btn btn-danger small" href="<?= $requestUrl ?>">Annuler</a>
+		
+</div>

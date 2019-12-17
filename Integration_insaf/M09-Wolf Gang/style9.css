@@ -1,0 +1,311 @@
+*{
+	box-sizing: border-box;
+
+}
+@keyframes masuperanimation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateY(50px);
+    }
+     50% {
+        transform: translateX(100px);
+    }
+    70% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+
+
+body {
+	background-image: url(img/bg_body.svg);
+	background-color: #464646;
+
+
+}
+
+header li {
+	list-style-type: none;
+}
+
+.div1 {
+	width: 70%;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+
+.div2 {
+	width: 25%;
+	display: inline-block;
+	color:white;
+	vertical-align: middle;
+	font-size: 2.5rem;
+
+}
+
+header {
+	width: 100%;
+	background: linear-gradient(133deg, #ffffff 0%, #ffffff 15%, #ffffff 49%, #000000 50%, #000000 100%); /* w3c */
+	display: inline-block;
+}/*
+nav {
+	float: right;	
+	margin: 3%;
+	font-size: 2.5rem;
+}*/
+li a {
+	color:white;
+	text-decoration: none;
+
+}
+.div2 a:hover {
+	color:orange;
+
+}
+/*
+nav li{
+	list-style-type: none;
+	text-align: center;
+}*/
+
+main {
+	width: 80%;
+	clear: both;
+	margin:auto;
+
+}
+
+h1 {
+	text-align: center;
+	padding:20px;
+	color:white;
+	font-size: 4rem;
+}
+h1:hover {
+	animation: masuperanimation 2s; /* On utilise "ma super animation" définie plus tôt */
+
+}
+
+span {
+	color:orange;
+}
+
+#image1 {
+	width: 100%;
+}
+
+h2 {
+	border-top:4px solid  #414141;
+	border-left:4px solid  #414141;
+	padding:20px;
+	text-align:left;
+	color:white;
+	font-size: 3rem;
+}
+
+section article {
+	width: 20%;
+	background-color: white;
+	display: inline-block;	
+	padding-bottom: 2%;
+	margin-right:2%;
+	margin-bottom: 2%;
+	padding:10px;
+
+}
+
+.sec1 {
+	text-align: center;
+}
+
+article a{
+	text-decoration: none;
+	padding: 2%;
+	background-color: orange;
+	color:white;
+
+}
+
+article img {
+	width: 100%;
+}
+
+
+h3 {
+	font-size: 2.5rem;
+	color:orange;
+}
+
+hr {
+	border: 2px solid orange;
+	width: 90%;
+}
+
+.sec2 {
+	color:white;
+}
+
+.vid2 {
+	display: none;
+}
+
+section ul li {
+	margin-right: 10%;
+	display: inline;
+	font-size: 2em;
+}
+
+video {
+	float: right;
+	width: 50%;
+	padding-bottom: 60px;
+}
+
+
+footer {
+	clear: both;
+	color:white;
+	box-shadow: 0px -8px 9px -6px rgba(0,0,0,0.75);
+	text-align: center;
+	font-size: 1rem;
+	margin:auto;
+	padding-top: 20px;
+	margin:20px;
+
+}
+
+footer a {
+
+	color:white;
+	margin:10px;
+
+}
+.foot {
+	font-size: 0.7rem;
+
+}
+
+footer img {
+	display: block;
+	margin:auto;
+	width: 30px;
+	margin-top: 50px;
+}
+
+@font-face {
+   font-family: boda;
+   src: url(fonts/BodegaSans_Black.ttf);
+}
+
+body {
+   font-family: boda;
+}
+
+@media screen and (max-width:1024px) {
+	
+
+	.div2 {
+		font-size: 2rem;
+	}
+	
+	section article {
+		display: block;	
+		width: 90%;
+		margin: auto;
+		margin-bottom: 6%;
+		padding-bottom: 20px;
+
+	}
+
+	section ul li {
+		display: block;
+		text-align: center;
+		padding-top: 40px;
+	}
+
+	video {
+		width: 100%;
+	}
+
+
+	.vid2 {
+	
+		display: block;
+	}
+
+	.vid1 {
+
+		display: none;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2, h3 {
+		font-size: 1.5rem;
+	}
+	
+	footer {
+		box-shadow: 0px 0px 162px -24px rgba(0,0,0,0.75);
+
+	}
+
+	p {
+		font-size: 1.3rem;
+	}
+	
+
+}
+
+@media screen and (max-width: 720px) {
+	
+	header {
+		background: linear-gradient(150deg, #ffffff 0%, #ffffff 15%, #ffffff 49%, #000000 50%, #000000 100%); /* w3c */
+		display: block;
+	}
+
+	header img {
+		width: 55%;
+	}
+
+	.div1{
+		display: block;
+		width: 100%;
+		padding: 10px;
+
+	}
+
+	.div2{
+		display: block;
+		font-size:1.5rem; 
+		width: 100%;
+		margin-left: 40%;
+
+	}
+
+	.div2 ul li {
+		padding-bottom: 20px;
+
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	/*header li {
+		padding-bottom: 10px;
+
+	}*/
+
+
+}

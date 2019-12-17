@@ -1,0 +1,58 @@
+
+
+Route::get('/inscription', '../Modules/User/UserController@showInscription')->name('showInscription');
+
+Route::post('/inscription', 'UserController@handleInscription')->name('handleInscription');
+
+Route::get('/connexion', 'UserController@showConnexion')->name('showConnexion');
+
+Route::post('/connexion', 'UserController@handleConnexion')->name('handleConnexion');
+
+Route::get('/annonce', 'TestController@showAnnonce')->name('showAnnonce');
+
+Route::post('/annonce', 'TestController@handleAnnonce')->name('handleAnnonce');
+
+
+
+
+
+
+{{route('handleConnexion')}}
+
+{{route('handleInscription')}}
+
+ {{asset('/storage').$photo->photo}}
+
+
+
+ <form method="post" action="" enctype=“multipart/form-data”>
+                                        <div class="member-img">
+                                            <img src="{{$user->photo}}" alt="">
+                                        </div><!--member-img end-->
+                                        <div class="team-info">
+                                            <h3><input type="text" name="nom" value="{{$user->name}}"></h3>
+                                            <span><input type="text" name="email" placeholder="Your Email"></span>
+                                            
+                                            <ul class="emt-links">
+                                                <li>
+                                                    <i class="la la-phone"></i>
+                                                    +1 212-758-8877
+                                                </li>
+                                                <li>
+                                                    <i class="la la-envelope"></i>
+                                                    <a href="mailto:{{$user->email}}" title=""><input type="email" name="mail" value="{{$user->email}}"></a>
+                                                </li>
+                                                <li><input type="file" name="photo" value="{{$user->photo}}"></li>
+                                            </ul>
+                                        </div><!--team-info end-->
+                                         {{csrf_field()}}
+
+                                    </form>
+
+
+
+
+                                    {{route('afficherProfil',Auth::user->id)}}
+
+                                    <span class="login-form"><a href=""><img src="{{asset('/')}}assets/images/{{Auth::user()->photo}}" alt="" style="width: 20%;"></a></span>
+                                

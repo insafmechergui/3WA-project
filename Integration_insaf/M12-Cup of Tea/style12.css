@@ -1,0 +1,596 @@
+*{
+	box-sizing: border-box;
+	/*border:1px solid red;*/
+}
+/*header*/
+header {
+	background-image: url(img/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	color: white;
+}
+
+header p {
+	text-align: center;
+}
+
+header .sous-menu {
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+header nav a {
+	text-decoration: none;
+	color: white;
+}
+header nav li{
+	padding: 10px;
+
+}
+
+header nav {
+	padding: 10px;
+}
+
+header .rib {
+	position: absolute;
+	right:0;
+	width: 150px;
+}
+
+header .p1{
+	background-color: rgba(0,0,0,0.1);
+	margin: 0;
+	padding: 5px;
+}
+
+header nav li:hover {
+background-color: rgba(255,255,255,0.2);
+padding:10px;
+}
+
+a:hover{
+	opacity: 0.75;
+}
+/*footer*/
+footer {
+	background-image: url(img/bg.jpg);
+	background-size: cover;
+	text-align: center;
+} 
+
+footer div a .fas, footer div a .far{
+	display: block;
+	text-align: center;
+		font-size: 30px;
+
+}
+
+footer .div1 a {
+	padding: 10px;
+}
+
+footer .div1 {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(0,0,0,0.1);
+	color:white;
+	padding-top: 10px;
+
+}
+
+.div2, .div3, .div4 {
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+}
+
+footer div a {
+	color:white;
+	text-decoration: none;
+	padding: 5px;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+footer .div5{
+	background-color: rgba(0,0,0,0.1);
+	color:white;
+	display: block;
+}
+
+footer img{
+	width: 30px;
+}
+
+@font-face {
+  font-family: amaranth;
+  src: url(fonts/amaranth.otf);
+}
+/*body*/
+body{
+	background-color: #F2F2F2;
+	margin: 0;
+			text-align: center;
+
+}
+
+main {
+	width: 70%;
+	margin:auto;
+	text-align: center;
+	  font-family: amaranth;
+
+}
+
+p{
+	font-size:16px;
+
+}
+
+ h1 {
+	color: #AAB73E;
+	font-size: 40px;
+}
+
+h2{
+	font-size: 25px;
+	color: #AAB73E;
+}
+
+.sec1 img {
+	width: 100%;
+}
+/*
+.sec3:hover{
+	opacity: 0.5;
+}*/
+.arti1{
+	opacity: 0.5;	
+}
+.arti1:hover{
+	opacity: 1;	
+}
+
+.sec3 {
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+.sec3  .divsec3 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.sec3 > div{
+	margin:20px;
+}
+
+.sec3 img{
+	width: 80%;
+}
+
+fieldset {
+	border:1px solid #E8E7DB;
+	border-bottom:none;
+	border-right:none;
+	border-left:none;
+}
+
+.sec4 {
+	background-color: white;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	padding: 10px;
+}
+
+.sec4 div{
+		margin:20px;
+
+}
+
+.sec4 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.sec4 div a {
+	background-color: #B18E6A;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.sec4 strong {
+	display: block;
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+ 
+
+/*
+.sec4 fieldset {
+	border:1px solid #E8E7DB;
+	border-bottom:none;
+	border-right:none;
+	border-left:none;
+
+}*/
+
+.sec4 img {
+	width: 50%;
+}
+
+/*product*/
+
+
+fieldset, label { margin: 0; padding: 0; }
+
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.section{
+	background-color: white;
+	margin-bottom: 30px;
+	text-align: left;
+	padding: 20px;
+}
+
+.section .divart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.section select {
+	background-color: white;
+	width: 100%;
+}
+
+.section .pri1 {
+	padding: 10px;
+	background-color: #B18E6A;
+	color: white;
+
+}
+
+.star{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.pri2{
+	color:#92AB32;
+}
+
+.section i {
+	color: red;
+}
+
+.section a {
+	text-decoration: none;
+}
+
+h3{
+	font-size: 30px;
+}
+
+.prix{
+	font-size:40px;
+	text-align: right;
+}
+
+/*listing*/
+.secp{
+	margin-top: 20px;
+	margin-bottom:  20px;
+}
+
+.divprin{
+	background-color: white;
+	margin-bottom:  20px;
+	padding: 10px;	
+	padding-bottom: 30px;
+}
+
+.divfiel{
+	display: flex;	
+}
+
+.divfiel fieldset{
+	text-align: left;
+}
+
+.divfiel img{
+	margin-top: 15px;
+}
+
+
+.div-sous a{
+	background-color: #B18E6A;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.div-sous{
+	display: flex;
+}
+
+.div-sous img{
+	width: 70%;
+}
+.div-sous strong {
+	display: block;
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+
+/*about*/
+.about h1 {
+	color: black;
+}
+.about {
+	text-align: left;
+	background-color: white;
+	padding: 40px;
+	margin-bottom: 20px;
+}
+
+.about .image1 {
+	float: left;
+	margin-right: 10px;
+}
+
+.about .image2 {
+	float: right;
+	margin-left: 10px;
+}
+.about article h2 {
+	color: black;
+}
+
+.concept  {
+	background-color: #E8EED0;
+	display: flex;
+}
+
+.concept article{
+	text-align: center;
+	margin:20px;
+}
+.concept img{
+	width: 30%;
+}
+
+@media screen and (max-width: 1024px){
+	main{
+		width: 100%;
+		margin: auto;
+	}
+
+	header .sous-menu {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header .sous-menu p{
+		margin-right: 100px;
+	}
+
+/*listing*/
+	.divfiel img{
+		display: none;
+	}
+
+	.div-sous{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.div-sous img{
+		width: 40%;
+	}
+
+	.div-sous h3{
+		font-size: 1.5em;
+	}
+/*home*/
+	.sec4{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sec3 .divsec3  {
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	.sec3 article {
+		width: 50%;
+	}
+
+	.sec3 article img{
+		width: 40%;
+	}
+/*
+	.sec3 .divsec3 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;	
+	}
+*/
+
+
+/*product*/
+/*about*/
+	.concept{
+		display: block;
+	}
+
+	.concept article{
+		padding: 10px;
+	}
+
+	.concept img {
+		width: 15%;
+	}
+}
+
+@media screen and (max-width: 720px){
+	/*header*/
+	
+	.rib{
+		display: none;
+	}
+
+	header nav ul{
+		display: flex;	
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header nav ul li {
+		margin-bottom: 20px;
+	}
+
+	header nav ul{
+		padding:0;
+	}
+	
+	header div{
+		text-align: center;
+	}
+
+	.sous-menu{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	/*.sous-menu img{
+margin-right: 20%;	}
+
+	.sous-menu p {
+		text-align: left;
+	}
+*/
+	.sous-menu .shop{
+		display: none;
+	}
+
+	.sous-menu div p{
+		text-align: left;
+		width: 150px;
+		padding: 10px;
+		font-size: 1.3em;
+		-webkit-box-shadow: 1px -1px 9px 5px rgba(37,142,39,0.54); 
+		box-shadow: 4px 0px 10px -4px rgba(0,0,0,0.75);
+		border-radius: 0 30px 30px 0 ;
+	}
+
+	.sous-menu div p i {
+		border:1px solid white;
+		border-radius: 50%;
+		padding: 5%;
+		opacity: 0.5;
+	}
+	/*footer*/
+	footer .div1  {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.div1 a{
+		width: 50%;
+	}
+
+	footer div {
+		display: block;
+	}
+
+	/*home*/
+	.sec1, .sec2{
+		display: none;
+	}
+
+	/*about*/
+	.about fieldset img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.about article img{
+		width: 20%;
+	} 
+
+	/*product*/
+	.star,.divart {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.divart img{
+		width: 70%;
+	}
+
+	.divart article, .divart p{
+		text-align: center;
+	}
+
+	.divart select {
+		margin-right: 100px;
+		margin-top: 20px;
+	}
+
+}

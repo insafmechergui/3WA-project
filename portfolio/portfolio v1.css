@@ -1,0 +1,70 @@
+*{box-sizing: border-box;}
+section {padding-top: 20px;}
+.descendre{background-color: gray !important; padding:10px !important}
+.descendre a:hover{color: white !important;}
+
+.header-nav li a{font-weight: bold}
+#accueil{position: relative;}
+.header-top{padding-top: 20px; padding-bottom: 10px; position: relative; width: 100%; padding-right: 15px; padding-left: 15px; z-index: 1;}
+.row li, .row a {color:white;}
+ul{display: block;}
+.list-inline li{display: inline-block;}
+.info-list{float:right;}
+.info-list li{margin-right: 10px}
+.social-media{float:left;}
+.social-media li{margin-right: 10px;}
+#carouselExampleFade{position: absolute;top:0;left:0;right:0;z-index: -1}
+@keyframes zoom {
+    from {transform: scale(1, 1);}
+    to {transform: scale(1.5, 1);}
+}
+.carousel-inner .carousel-item > img { -webkit-animation: zoom 30s; animation: zoom 30s;}
+/*
+#carouselExampleFade .carousel-inner{height: 55vw;}
+*/
+.scroll-down{color:white;}
+.scroll-down:hover{color:#E74C3C;}
+#scrolldown{position: relative;text-align: center;bottom:-200px/*margin-top: 15%;margin-bottom: 10%;*/}
+.menu-top{display: block;}
+.header-nav a:hover{color:#E74C3C;text-decoration: none;}
+#nav {margin-top:3%;background-color: rgba(255,255,255,0.3); padding:30px; width:100%}
+
+#nav {position: fixed;top:10%; overflow: hidden;}
+#nav .header-nav {display: flex;justify-content: space-around;}
+#nav ul li{display: inline;margin-right: 1%;}
+
+.header-h {text-align: center;color:white; margin-top:20%;}
+.header-h a{color:white; }
+.header-h a:hover{color:#E74C3C; }
+#main{width: 90%;margin-top:20%;margin-right: auto;margin-left: auto;}
+#main h2{text-align: center;text-transform: uppercase;}
+
+#competance{margin-left: auto;margin-right: auto;width: 80%; }
+.progress {margin-bottom: 10px;}
+.progress-bar{font-size: 15px;}
+
+#portfolio div {display: flex; justify-content: space-around;text-align: center;margin-bottom: 5%;}
+#portfolio div a {width: 15%;height:200px;}
+#portfolio div img{width: 110%; height: 100%;border-radius: 8%;}
+
+#propos {text-align: justify;}
+#propos div{width: 80%;display: inline-block}
+#propos img{width: 15%;}
+#propos h3{text-align: center;color:darkgray}
+
+#contact div{height: 200px;  background-image: url("img/bg_04%20(1).jpg"); background-attachment: fixed;width: 100%;background-position: bottom}
+#contact h2{text-align: center;text-transform: uppercase;padding-top: 20px;}
+#contact h4{text-transform: uppercase;color:lightslategray}
+#contact span, #contact a{color:darkgray}
+#contact .coordonnee span:hover, #contact .coordonnee a:hover{color: #E74C3C;text-decoration: none}
+#contact .coordonnee,#contact .image, #contact .formulaire {width: 33%;margin:1%}
+#contact article{display: flex}
+/*#contact input[type=email]{background-image: url(img/bg_form_mail.svg); background-repeat: no-repeat;background-size: 30px 30px; background-position: 5px 5px; padding-left: 10%;}
+input[type=text]{background-image: url(img/bg_form_name.svg); background-repeat: no-repeat;background-size: 30px 30px; background-position: 5px 5px; padding-left: 10%;}
+#contact textarea {background-image: url(img/bg_form_message.svg); background-repeat: no-repeat; background-size: 40px 40px;background-position: 15px 15px; padding-left:200px;}
+*/
+#contact input {border-radius: 50px 50px ;margin-bottom: 10px;padding:20px; background-image: url(img/fond.png)}
+#contact textarea {border-radius: 30px 30px ;margin-bottom: 10px;padding:20px; background-image: url(img/fond.png)}
+#contact button{border-radius: 50px 50px;}
+#contact button:hover{background-color: #F9FAFB;color:dimgray}
+#contact input:focus, #contact textarea:focus{opacity: 0.6}

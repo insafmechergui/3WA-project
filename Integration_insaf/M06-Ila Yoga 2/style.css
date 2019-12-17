@@ -1,0 +1,168 @@
+body {
+	background-image: url(img/background_section.jpg);
+	background-size: cover;
+	margin:0px;
+}
+
+
+header {
+	background-image: url(img/fond.jpg);
+	background-size: cover;
+	height: 600px;
+	color:white;
+	text-align: center;
+		margin: -10px;
+
+
+
+}
+
+nav {
+	background-color: rgb(255,255,255,0.2);
+	padding: 30px;
+	margin:0px;
+
+}
+
+
+nav ul li {
+	display: inline;
+	margin: 20px;
+
+
+}
+
+
+ul a {
+	text-decoration: none;
+	color:white;
+
+}
+
+
+header p {
+	background-color: rgb(255,255,255,0.1);
+	margin: 0px;
+}
+
+header h1 {
+	padding-top: 100px;
+
+}
+
+/*main*/
+main{
+	background-color: white;
+
+}
+
+table {
+	width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+
+
+
+
+}
+table, th,td{
+    border:thin solid #CACACA ;
+    border-collapse: collapse;
+
+
+}
+
+
+td {
+	height: 50px;
+	text-align: center;
+
+}
+
+table th {
+	text-align: left;
+ 	background-color: #C6A8DA;
+    color:white;
+	height: 70px;    
+	font-size: 1.6em;
+
+}
+
+caption { 
+    display: table-caption;
+    text-align: center;
+    padding:20px;
+    font-size: 2em;
+}
+
+tr td:nth-child(1) {
+	text-align: left;
+}
+
+tr:nth-child(even){
+	background-color: #F2F2F2;
+}
+
+table th p {
+ margin: 30px;
+}
+
+
+/*tr td:nth-child(2) {
+	text-align: center;
+}
+tr td:nth-child(3) {
+	text-align: center;
+}*/
+
+
+h2, h3 {
+	text-align: center;
+}
+
+a {
+	color:#C6A8DA;
+	text-decoration: none;
+}
+form {
+	margin: auto;
+	width: 90%;
+	text-align: center;
+
+}
+
+legend {
+	text-align: left;
+	font-size: 20px;
+}
+
+input, select {
+	margin: 30px;
+}
+
+select {
+	width: 90%;
+}
+
+fieldset {
+	margin:20px;
+
+}
+
+h3 {
+	margin: 50px;
+}
+ input[value="Envoyer"]{
+background-color: #9175D1;
+padding:10px;
+color:white;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+}
+footer img {
+	width: 50px;
+	margin-top: 30px;
+}

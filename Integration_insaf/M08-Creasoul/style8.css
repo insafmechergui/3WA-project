@@ -1,0 +1,183 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	outline: none;
+
+}
+nav li {
+	display: inline;
+	margin: auto;
+	padding: 1%;
+}
+nav li {
+		list-style-type: none;
+}
+
+	ul {
+		padding: 0px;
+
+	}
+header {
+	text-align: center;
+
+}
+li a {
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+		padding-bottom: 10px;
+
+}
+li a:hover {
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+header a{
+	text-decoration: none;
+	color:white;
+	/*margin: 6%;*/
+	font-size: 1.6em;
+
+}
+header nav li a:hover {
+	background-color: #38B5A0;
+}
+header nav li a {
+	display: inline-block;
+	width: 30%;
+}
+nav {
+	background-color: #00A793;
+width: 100%;
+	box-sizing: border-box;
+
+}
+
+body {
+	width: 80%;
+	margin: auto;
+	background-color: #F2F1F3;
+	line-height: 1.8;
+
+
+}
+h1, h3 {
+	color:#00A793;
+	font-family: 'Open Sans', sans-serif;
+}
+ hr {
+ 	border: 1px solid #00A793;
+ }
+ main img{
+	/*size: cover;
+	position: center;*/
+	max-width: 100%; 
+
+}
+
+
+ span {
+ 	color:#22B0A0;
+ }
+ section {
+ 	width: 70%;
+ 	display: inline-block;
+ 	padding-right: 20px;
+
+ 	
+ }
+aside {
+	background-color: #82C482;
+	max-width: 30%;
+	display: inline-block;
+	vertical-align: top;	
+	padding:5px;
+	float: right;
+
+
+}
+
+
+p{
+	font-size: 1.6em;
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-align: justify;
+}
+h1 {
+	font-size: 4em;
+}
+h3{
+	font-size:2.4em;
+}
+
+footer {
+	text-align: center;
+	padding-top: 2%;
+	clear: both;
+}
+footer img {
+	width: 3%;
+}
+
+@media screen and (max-width: 1024px) {
+	
+	body {
+		width: 80%;
+		margin: auto;
+		background-color: #F2F1F3;
+	}
+ 	section {
+	 	width: 100%;
+ 		display: inline-block;
+ 
+ 	
+	}
+	aside {
+		background-color: #82C482;
+		display: block;
+		max-width: 100%;
+	
+	}
+
+}
+
+@media screen and (max-width: 720px) {
+	
+	nav li {
+			display: block;
+
+	}
+	header a{
+
+		font-size: 1.3em;
+		margin:10%; 
+
+
+	}
+
+    section {
+    width: 100%;
+ 	display: inline-block;
+ 	
+
+ 	
+ 	}
+ 	aside {
+		display: none;
+					width: 100%;
+
+	}
+	p {
+	font-size: 1.2em;
+	}
+
+	h1 {
+	font-size: 2.5em;
+	}
+
+	h3{
+	font-size:1.5em;
+	}
+
+
+}
+

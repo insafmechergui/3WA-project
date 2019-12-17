@@ -1,0 +1,65 @@
+
+<div class="container">
+    <form action="<?= $requestUrl ?>/booking" method="post">
+			<fieldset>
+               <legend><h2><i class="fa fa-user"></i> Reserver</h2></legend>
+            	<select name="jour">
+                   <?php for($i=1;$i<=31;$i++) { ?>
+                    <option value="<?= $i ?>"><?= $i ?></option> 
+                    <?php  } ?> 
+                     
+				</select>
+              <span>/</span>	
+               <select name="mois" >
+                   
+					<option value="1">Janvier</option>
+					<option value="2">Février</option>
+					<option value="3">Mars</option>
+					<option value="4">Avril</option>
+					<option value="5">Mai</option>
+					<option value="6">Juin</option>
+					<option value="7">Juillet</option>
+					<option value="8">Août</option>
+					<option value="9">Septembre</option>
+					<option value="10">Octobre</option>
+					<option value="11">Novembre</option>
+					<option value="12">Décembre</option>
+                   
+               </select>
+               <span>/</span>
+               <select name="annee" >
+                  
+                   <option value="<?= date("Y") ?>"><?= date("Y") ?></option>
+                   
+                   <option value="<?= date("Y")+1 ?>"><?= date("Y")+1 ?></option>
+               </select>
+               <span>à</span>
+               <select name="hour">
+                  <?php for($i=12;$i<=23;$i++){ ?>
+                   <option value="<?= $i ?>"><?= $i ?></option>
+                <?php } ?>
+               </select>
+               <span>:</span>
+               <select name="min">
+                  <option value="00 ">00</option>
+                   <option value="15 ">15</option>
+                   <option value="30 ">30</option>
+                   <option value="45 ">45</option>
+               </select>
+               <br>
+               nombre de couverts: 
+               <select name="nbplace"> 
+                  <?php for($i=1;$i<=12;$i++){ ?>
+                   <option value="<?= $i ?> "><?= $i ?></option>
+                   
+                <?php } ?>
+               </select>
+            	
+			</fieldset>
+			
+    
+	
+			<input class="btn btn-success" type="submit" value="Réserver">
+			<a class="btn btn-danger small" href="<?= $requestUrl ?>">Annuler</a>
+	</form>	
+</div>

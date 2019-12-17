@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	background-image: url(img/fond.png);
+}
+.div1 img {
+	width: 10%;
+}
+.div1 {
+	width: 30%;
+	display: block;
+}
+.div2 {
+	width: 50%;
+	display: block;
+	vertical-align: top;
+}
+
+.sec1 {
+	background-image: url(img/bg_header.png);
+	background-size: cover;
+	background-position: center;
+}
+.sec2, .sec3, .sec4, .sec5 {
+	width: 80%;
+	margin:auto;
+}
+

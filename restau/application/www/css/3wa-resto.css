@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+a{color : #1E593B; font-weight: bold; text-decoration: none;transition: color 0.25s;}
+
+a:hover{ color: #339966;}
+
+body{ border-top: 1.5em solid #EF4036;padding: 1em 5em; font-family: sans-serif;}
+
+fieldset{ margin-bottom: 1em;padding-left: 1em; padding-right: 1em; border-color: #1E593B;border-radius: 6px;}
+
+footer{ margin-top: 3em;text-align: center;}
+
+h1{ color: #EF4036; font-family: cursive;letter-spacing: 0.15em; text-align: center;}
+
+h2{ margin: 1.5em 0; color: #1E593B;}
+
+nav a {padding:1em;background-color: darkgreen;color: white;margin-bottom: 1%;}
+
+.log{float:right;}
+
+.inscri{float:left;}
+
+.meal-list{clear: both}
+
+.mealimg {width: 200px;}
+
+li{display: block;}
+
+nav{margin-bottom: 10%;}
+
+caption{font-family: cursive; font-size: 4em;}
+
