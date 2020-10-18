@@ -4,12 +4,12 @@
                     <?php foreach($res as $post){ ?>
                     <div class="card" >
                     <div class="card-body" >
-                        
-                            <div>
+   
+                            <div class="homeArt">
                                <?php if(!empty($post['url'])){ ?>
-                                <img src="image/<?= $post['url'] ?>"  alt="">
+                                <img src="image/<?= $post['url'] ?>"  alt="blogImg">
                                <?php } else { ?>
-                                <img src="image/replace.jpg"  alt="">
+                                <img src="image/replace.jpg"  alt="blogImg" >
 
                                <?php } ?>
                                 <p class="card-text" id="temp"><?= $post['date_post'] ?></p>
